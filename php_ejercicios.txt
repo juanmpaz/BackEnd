@@ -1,0 +1,68 @@
+1. Muestra hola mundo por pantalla.
+<?php
+echo "Hola Mundo!";
+?>
+
+2. Crea dos variables y sumarlas y muestra el resultado.
+<?php
+$numero1 = 15;
+$numero2 = 35;
+
+$suma = $numero1 + $numero2;
+
+echo $suma;
+?>
+
+3. Muestra los números del 1 al 10 en linea.
+<?php
+for ($i = 1; $i < 11; $i++) {
+     echo $i;
+}
+?>
+
+4. Meter un hola mundo dentro de una estructura html.
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <?php echo "Hola mundo!"; ?>
+    
+  </body>
+</html>
+
+5. Cógete cualquier imagen y pon un img con la ruta de la imagen con PHP.
+
+6. Create un select en HTML y metele los números del 1 al 10 como opciones.
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    
+    <select name="select">
+        <?php
+            for ($i=1; $i < 11 ; $i++) {
+            echo '<option value="'.$i.'">'.$i.'</option>';
+        }
+        ?>
+    </select>
+  </body>
+</html>
+
+7. Hacer la tabla de multiplicar.
+<?php 
+for ($i=1; $i<=10 ; $i++){
+
+	echo 'Tabla del '.$i.'<br />';
+for ($j=1; $j<=10 ; $j++){
+ 
+	echo '[ '.$i.' * '.$j.' = '.$i*$j.' ] ';
+}
+    echo '<br />';
+}
+?>
